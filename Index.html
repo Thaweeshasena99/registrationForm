@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Student Registration Form</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="Style.css">
+
+</head>
+<body>
+	
+	<div class="container">
+
+		<!-- left side -->
+		<div class="left">
+			<div class="logo">
+				<div><img src="logo-black.png" alt="" width="100px"></div>
+				<div class="uni-name"><h1>Open University Srilanka</h1></div>
+			</div>
+			<div class="image"><img src="" alt="" width="300px"></div>
+			<div class="footer-info">
+				<div><h4>Software Engineering Student Registration</h4></div>
+				<div><h5>www.ou.ac.lk</h5></div>
+				<div><h5>© | 2020 Thaweesha Senanayake </h5></div>
+			</div>
+		</div>
+
+		<!-- right side -->
+		<div class="form-container">
+			<div class="title">
+				<h1><span class="span">Regi</span>stration Form</h1>
+			</div>
+			<div class="wrapper">
+				<form action="submit" >
+					<div class="form">
+						
+						<div class="input-feild">
+							<label for="name">Full Name </label>
+							<input type="text" placeholder="John Doe" name="name" required class="input-box" >
+						</div>
+
+						<div class="input-feild">
+							<label for="intial">Name with Intials </label>
+							<input type="text" placeholder="J.K. Rollyn" name="intial" required class="input-box">
+						</div>
+						
+						<div class="input-feild">
+							<label for="address-1">Address Line 1 </label>
+							<input type="address" placeholder="House Number" name="address-1" required class="input-box">
+						</div>
+
+						<div class="input-feild">
+							<label for="address-2">Address Line 2</label>
+							<input type="Street" placeholder="Street Name" name="address-2" required class="input-box" >
+						</div>
+
+						<div class="input-feild">
+							<label for="address-3">Address Line 3 </label>
+							<input type="City" placeholder="City" name="address-3" reuired class="input-box">
+						</div>
+
+						<div class="input-feild">
+							<label for="district">District</label>
+							
+							<select name="district" name="district" class="input-box">
+								<option value="#">Please Select</option>
+								<option value="colombo">Colombo</option>
+								<option value="gampaha">Gampaha</option>
+								<option value="galle">Galle</option>
+								<option value="matara">Matara</option>
+								<option value="hambanthota">Hambanthota</option>
+								<option value="kalutara">Kalutara</option>
+								<option value="badulla">Badulla</option>
+								<option value="nuwara eliya">Nuwara Eliya</option>
+								<option value="monaragala">Monaragala</option>
+								<option value="rathnapura">Rathnapura</option>
+							</select>
+						
+						</div>
+
+						<div class="input-feild"> 
+							<label for="email">Email </label>
+							<input type="email" placeholder="example@domain.com" name="email" required class="input-box">
+						</div>
+
+						<div class="input-feild">
+							<label for="phone">Phone Number</label>
+							<input type="tel" placeholder="0712345678" pattern="[0-9]{10}"  name="phone" required class="input-box">
+						</div>
+
+						<div class="input-feild">
+							<label for="nic">NIC Number </label>
+							<input type="text" placeholder="123456789V" name="nic" required class="input-box">
+						</div>
+
+						<div class="input-feild">
+							<label for="dob">Date Of Birth</label>
+							<input type="date" placeholder="mm/dd/yyyy" name="dob" class="input-box">
+						</div>
+
+						<div class="input-feild">
+							<label for="gender">Gender</label>
+							<div class="input-gender">
+								<div>
+									<label for="male">Male</label>
+									<input type="radio"  name="gender" id="male" value="male" checked>
+								</div>
+								<div>
+									<label for="female">Female</label>
+									<input type="radio"  name="gender" id="female" value="female">
+								</div>
+							</div>
+						</div>
+
+						<div class="input-feild">
+							<label for="reg-no">Registration Number </label>
+							<input type="number" placeholder="12345678"  name="reg-no" class="input-box">
+						</div>
+
+						<div class="input-feild"> 
+							<label for="al">A/L Stream</label>
+							
+							<select name="al" class="input-box">
+									<option value="#">Please Select</option>
+									<option value="maths">Maths</option>
+									<option value="bio">Bio</option>
+									<option value="commerce">Commerce</option>	
+							</select>
+							
+						</div>
+
+						<div class="input-feild">
+							<label for="school">School</label>
+							<input type="text" placeholder="BP/Royal College, Colombo"  name="school" class="input-box"> 
+						</div>
+						
+						<div class="input-feild input-file">
+							<label for="nic-copy">Scanned Copy of NIC</label>
+							<input type="File"  name="nic-copy" class="input-box">
+						</div>
+
+						<div class="input-feild input-file">
+							<label for="photo">Photograph</label>
+							<input type="File"  name="photo" class="input-box">
+						</div>
+
+						<div class="input-feild">
+							<label for="sub-amount">Number Of Subjects You Select</label>
+							<div class=" input-range">
+								<input type="range" min="8" max="12" name="sub-amount" oninput="show.value =this.value"> 
+								<output id="show">10</output>
+							</div>
+								
+							
+							
+						</div>
+
+						<div class="input-feild">
+							<label for="study-center">Study Center</label>
+							
+							<select name="study-center" class="input-box" >
+								<option value="#">Please Select</option>
+								<option value="colombo">Colombo</option>
+								<option value="gampaha">Gampaha</option>
+								<option value="galle">Anuradhapura</option>
+								<option value="matara">Matara</option>
+								<option value="hambanthota">Polgolla</option>
+								<option value="kalutara">Batticola</option>
+								<option value="badulla">Badulla</option>
+								<option value="nuwara eliya">Jaffna</option>
+								<option value="monaragala">Kurunegala</option>
+								<option value="rathnapura">Rathnapura</option>
+								
+
+							</select>
+						
+						</div>
+
+					</div>
+					<div class="footer">
+						<div class="declare">
+							<input type="checkbox" >
+							<label for="check">I declare that all the information I have provided is correct.</label>
+						</div>
+						<div class="btn">
+							<input type="submit" value="Submit" id="btn">
+						</div>
+					</div>
+
+				</form>
+			</div>
+		</div>
+		<div class="footer-mobile">
+			<div><h4>Software Engineering Student Registration</h4></div>
+			<div><h5>www.ou.ac.lk</h5></div>
+			<div><h5>© | 2020 Thaweesha Senanayake </h5></div>
+		</div>
+	</div>
+	
+
+	<script type="text/javascript">
+		const button = document.querySelector("#btn").addEventListener("click", function submit(){
+
+			alert("Hi");
+		})
+	</script>
+
+
+	
+
+</body>
+</html>
